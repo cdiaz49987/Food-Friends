@@ -32,6 +32,37 @@
   h1 {
    padding-top: 50px;
    padding-bottom: 50px;
+}ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F08080;
+}
+
+li {
+    float: left;
+    border-right:1px solid 	#FFFACD;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #FAFAD2;
+}
+
+.active {
+    background-color:#FFB6C1;
 }
   td {
     height: 50px;
@@ -44,6 +75,12 @@
     <img src= "logo.jpg" alt="logo" width="128" height="128" > <h1>
    Food Friends
  </h1> 
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
  <h2 class= "welcome"> Find The Food You Are Craving For!!! :) </h2>
  <h2>Please Choose...</h2> 
 <table>
