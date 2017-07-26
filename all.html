@@ -1,1 +1,42 @@
+<html>
+  <head> 
+     <title> Results
+    </title>
+  <body>
+<input id="myInput" type="text">
+<h1> Pick a number 1-4. </h1>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var text;
+    var fruits = document.getElementById("myInput").value;
 
+    switch(fruits) {
+        case "1":
+            text = "woowww";
+        break;
+        case "2":
+        text = "I am not a fan of orange.";
+        break;
+        case "3":
+        text = "How you like them apples?";
+        break;
+        case "4":
+            text = "woowww";
+        break;
+        case "5":
+        text = "I am not a fan of orange.";
+        break;
+        case "6":
+        text = "How you like them apples?";
+        break;
+        default:
+        text = "I have never heard of that fruit...";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
