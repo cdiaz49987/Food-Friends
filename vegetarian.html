@@ -55,9 +55,15 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color:#FFB6C1;}
+    background-color:#FFB6C1;
+}
   td {
     height: 50px;
+}
+#demo {
+	color: black;
+	font-size:30px;
+	width: 800px;
 }
   </style> 
  <head>
@@ -76,7 +82,7 @@ li a:hover:not(.active) {
 	<center><h1> Pick a number 1-7. </h5></center>
 <center><input id="myInput" type="text"></center>
 	<center><button onclick="myFunction()">Try it</button></center>
-<p id="demo"></p>
+	<center><p id="demo"></p></center>
 <script>
 function myFunction() {
     var text;
