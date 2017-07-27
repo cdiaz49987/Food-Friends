@@ -1,6 +1,82 @@
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <html>
+	<style>
+  /* body  {
+    background-image: url("food.JPG");
+  }*/
+  body {
+    height: 200px;
+    background: white;  
+    background: -webkit-linear-gradient(left, white , pink); 
+    background: -o-linear-gradient(right, white, pink);
+    background: -moz-linear-gradient(right, white, pink); 
+    background: linear-gradient(to right, white, pink); 
+}
+  * {
+    font-family: Arial, Helvetica, sans-serif; }
+  h1 {
+  float: right;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+  table, h2 {
+    padding-bottom: 50px;
+    padding-left: 100px;
+}
+  .welcome {   padding-top: 30px;
+  }
+ ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F08080;
+}
+
+li {
+    float: left;
+    border-right:1px solid 	#FFFACD;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #FAFAD2;
+}
+
+.active {
+    background-color:#FFB6C1;
+}
+  td {
+    height: 50px;
+}
+  </style> 
+ <head>
+  <title>Food Friends</title>
+</head>
 <body>
+    <img src= "logo.jpg" alt="logo" width="128" height="128" > <h1>
+   Food Friends
+ </h1> 
+  <ul>
+  <li><a class="active" href="food.html">Home</a></li>
+  <li><a href="random.html">Random</a></li>
+  <li><a href="question.html">Quiz</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
   <h1> this is the veggie page</h1>
 <input id="myInput" type="text">
 <h1> Pick a number 1-8. </h1>
