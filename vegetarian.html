@@ -2,28 +2,29 @@
 <body> 
 <style> 
  body { 
-height: 200px; 
- background: white;   
- background: -webkit-linear-gradient(left, white , pink);  
- background: -o-linear-gradient(right, white, pink); 
-  background: -moz-linear-gradient(right, white, pink);  
- background: linear-gradient(to right, white, pink);  
+	height: 200px; 
+ 	background: white;   
+	background: -webkit-linear-gradient(left, white , pink);  
+ 	background: -o-linear-gradient(right, white, pink); 
+ 	background: -moz-linear-gradient(right, white, pink);  
+ 	background: linear-gradient(to right, white, pink);  
 } 
  * { 
-   font-family: Arial, Helvetica, sans-serif; } 
+   	font-family: Arial, Helvetica, sans-serif; } 
   h1 { 
-  float: right;
-margin: auto; 
- width: 70%; 
- padding: 10px; 
-  padding-top: 50px; 
-padding-bottom: 50px; 
+ 	 float: right;
+	margin: auto; 
+ 	width: 70%; 
+ 	padding: 10px; 
+  	padding-top: 50px; 
+	padding-bottom: 50px; 
 } 
-table, h2, script { 
-padding-bottom: 50px; 
-padding-left: 100px; 
+h2,script { 
+	padding-bottom: 50px; 
+	padding-left: 100px; 
 	} 
-.welcome {   padding-top: 30px; 
+.welcome {   
+	padding-top: 30px; 
  } 
  ul { 
     list-style-type: none; 
@@ -60,11 +61,16 @@ font-size:30px;
 font-family:Times; 
 	width: 800px;
 }
-h6 {
+/*h6 {
 	font-size:30px;
 	font-family:Times;
 	color:black;
-} 
+} */
+dir {
+    /*margin: auto;
+    width: 30%;*/
+    padding-left: 30px;   
+}
 #myInput{
 	font-size:25px;
 	font-family:Times;
@@ -81,10 +87,12 @@ Food Friends
 <li><a href="random.html">Random</a></li> 
   <li><a href="question.html">Quiz</a></li> 
 	</ul> 
-<center><h6> Pick a number 1-7. </h6><center> 
- <center><input id="myInput" type="text"></center> 
-	<center><button onclick="myFunction()">Try it</button></center> 
-	<center><strong><p id="demo"></p> </strong></center>
+<center><h2> Pick a number 1-7. </h2><center> 
+ <dir>
+	 <input id="myInput" type="text">
+	 <button onclick="myFunction()">Try it</button>
+	 <strong><p id="demo"></p> </strong>
+	</dir>
 <script> 
 function myFunction() {    var text; 
    var vegetarian = document.getElementById("myInput").value; 
