@@ -54,11 +54,21 @@ li a:hover:not(.active) {
   td { 
     height: 50px; 
 } 
-        #demo { 
+ #demo { 
 color: black; 
-font-size:30px; 
+font-size:30px;
+font-family:Times; 
 	width: 800px;
+}
+h6 {
+	font-size:30px;
+	font-family:Times;
+	color:black;
 } 
+#myInput{
+	font-size:25px;
+	font-family:Times;
+	}
 </style>  
  <head> 
   <title>Results</title> 
@@ -71,10 +81,10 @@ Food Friends
 <li><a href="random.html">Random</a></li> 
   <li><a href="question.html">Quiz</a></li> 
 	</ul> 
-<center><h1> Pick a number 1-7. </h1><center> 
+<center><h6> Pick a number 1-7. </h6><center> 
  <center><input id="myInput" type="text"></center> 
 	<center><button onclick="myFunction()">Try it</button></center> 
-	<center><p id="demo"></p> </center>
+	<center><strong><p id="demo"></p> </strong></center>
 <script> 
 function myFunction() {    var text; 
    var vegetarian = document.getElementById("myInput").value; 
