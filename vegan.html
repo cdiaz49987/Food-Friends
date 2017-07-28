@@ -22,6 +22,7 @@ padding-bottom: 50px;
 table, h2 { 
 padding-bottom: 50px; 
 padding-left: 100px; 
+
 	} 
 .welcome {   padding-top: 30px; 
  } 
@@ -58,7 +59,22 @@ li a:hover:not(.active) {
 color: black; 
 font-size:30px; 
 	width: 800px;
+}
+	        #demo { 
+color: black; 
+font-size:30px;
+font-family:Times; 
+	width: 800px;
+	}
+	h6 {
+	font-size:30px;
+	font-family:Times;
+	color:black;
 } 
+#myInput{
+	font-size:25px;
+	font-family:Times;
+}	
 </style>  
  <head> 
   <title>Results</title> 
@@ -71,7 +87,7 @@ Food Friends
 <li><a href="random.html">Random</a></li> 
   <li><a href="question.html">Quiz</a></li> 
 	</ul> 
-<center><h1> Pick a number 1-7. </h1><center> 
+<center><h6> Pick a number 1-7. </h6><center> 
  <center><input id="myInput" type="text"></center> 
 	<center><button onclick="myFunction()">Try it</button></center> 
 	<center><p id="demo"></p> </center>
