@@ -62,8 +62,8 @@ li a:hover:not(.active) {
 .active {
     background-color:#FFB6C1;
 }
-  td {
-    height: 50px;
+  dir {
+    padding-left: 30%; 
 }
   </style> 
  <head>
@@ -77,10 +77,11 @@ li a:hover:not(.active) {
   <li><a href="question.html">Quiz</a></li>
 </ul>
 <body>
-   <center> <h1> Pick a number 1-7. </h1></center>
+    <h1> Pick a number 1-7. </h1>
+	<dir>
 <input id="myInput" type="text">
-<button onclick="myFunction()">Try it</button>
-    <center><p id="demo"></p></center>
+<button onclick="myFunction()">Try it</button></dir>
+	<center><p id="demo"></p></center>
 <script>
 function myFunction() {
     var text;
