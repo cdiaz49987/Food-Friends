@@ -65,6 +65,21 @@ li a:hover:not(.active) {
   dir {
     padding-left: 30%; 
 }
+#demo { 
+color: black; 
+font-size:30px;
+font-family:Times; 
+	width: 800px;
+	}
+	h6 {
+	font-size:30px;
+	font-family:Times;
+	color:black;
+} 
+#myInput{
+	font-size:25px;
+	font-family:Times;
+}
   </style> 
  <head>
   <title>Results</title>
@@ -77,11 +92,11 @@ li a:hover:not(.active) {
   <li><a href="question.html">Quiz</a></li>
 </ul>
 <body>
-    <h1> Pick a number 1-7. </h1>
+    <h6> Pick a number 1-7. </h6>
 	<dir>
 <input id="myInput" type="text">
 <button onclick="myFunction()">Try it</button></dir>
-	<center><p id="demo"></p></center>
+	<center><strong><p id="demo"></p></strong></center>
 <script>
 function myFunction() {
     var text;
