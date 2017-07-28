@@ -1,6 +1,102 @@
 <!DOCTYPE html>
-  <html>
-    <body>
-      
-    </body>
+<html>
+	<body>
+  <style>
+	  body {
+    height: 200px;
+    background: white;
+    background: -webkit-linear-gradient(left, white , pink);
+    background: -o-linear-gradient(right, white, pink);
+    background: -moz-linear-gradient(right, white, pink);
+    background: linear-gradient(to right, white, pink);
+}
+    * {
+      font-family: Arial, Helvetica, sans-serif;}
+    h1 {
+    float: right;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+	letter-spacing: 3px;
+    }
+h2, h3, form{
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    }
+    ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F08080;
+}
+	li {
+    float: left;
+    border-right:1px solid 	#FFFACD;
+}
+	li:last-child {
+    border-right: none;
+}
+	li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+	li a:hover:not(.active) {
+    background-color: #FAFAD2;
+}
+	.active {
+    background-color:#FFB6C1;
+}	  .container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+  </style>
+  <head>
+    <title> Quiz </title>
+	</head>
+<body>
+   <img src= "logo.jpg" alt="logo" width="128" height="128" > <h1>
+   Food Friends
+ </h1>
+  <ul>
+  <li><a class="active" href="food.html">Home</a></li>
+  <li><a href="random.html">Random</a></li>
+  <li><a href="question.html">Quiz</a></li>
+</ul>
+  <h2> Quiz Questions </h2>
+  <h3> Question #2: Do you want a... </h3>
+	<div class="container">
+  <img src="book.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+  <form action= "question2vegetarian.html" method="get" onsubmit="return is_checked">
+<input type= "radio" onclick="window.location='https://cdiaz49987.github.io/Food-Friends/vts.html';" name= "auto" value="snack" Id="auto_snack"/> Snack
+<br/>
+<input type="radio" onclick="window.location='https://cdiaz49987.github.io/Food-Friends/vtm.html';" name= "auto" value="meal" Id="auto_meal"/> Meal
+<br/>
+</form>
+ </div>
+  </div>
+</div>	
+</body>
 </html>
