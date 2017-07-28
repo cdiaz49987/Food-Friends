@@ -19,10 +19,7 @@
   	padding-top: 50px; 
 	padding-bottom: 50px; 
 } 
-h2,script { 
-	padding-bottom: 50px; 
-	padding-left: 100px; 
-	} 
+
 .welcome {   
 	padding-top: 30px; 
  } 
@@ -51,26 +48,19 @@ li a:hover:not(.active) {
     background-color: #FAFAD2; }  
 .active { 
     background-color:#FFB6C1; 
-} 
-  td { 
-    height: 50px; 
-} 
+}  
  #demo { 
 color: black; 
 font-size:30px;
 font-family:Times; 
 	width: 800px;
 }
-/*h6 {
+h6 {
 	font-size:30px;
 	font-family:Times;
 	color:black;
-} */
-dir {
-    /*margin: auto;
-    width: 30%;*/
-    padding-left: 30px;   
-}
+} 
+
 #myInput{
 	font-size:25px;
 	font-family:Times;
@@ -83,16 +73,16 @@ dir {
 Food Friends 
 </h1>  
   <ul> 
-	  <li><a class="active" href="food.html">Home</a></li> 
-<li><a href="random.html">Random</a></li> 
-  <li><a href="question.html">Quiz</a></li> 
+	<li><a class="active" href="food.html">Home</a></li> 
+	<li><a href="random.html">Random</a></li> 
+	<li><a href="question.html">Quiz</a></li> 
 	</ul> 
-<center><h2> Pick a number 1-7. </h2><center> 
- <dir>
+<center><h6> Pick a number 1-7. </h6><center> 
+ <center>
 	 <input id="myInput" type="text">
 	 <button onclick="myFunction()">Try it</button>
 	 <strong><p id="demo"></p> </strong>
-	</dir>
+	</center>
 <script> 
 function myFunction() {    var text; 
    var vegetarian = document.getElementById("myInput").value; 
