@@ -166,188 +166,705 @@ slideit ()
 	<center><button onclick="myFunction()">Try it</button></center> 
 	<center><strong><p id="demo"></p></strong> </center>
 <script> 
-function myFunction() {    
-	var text; 
-   var all = document.getElementById("myInput").value; 
- switch(all) { 
-       case "1": 
-           text = "Try eating a light but creamy and smooth cheesecake. Keep in mind that this dish commonly includes sour cream, sugar, graham crackers, powdered sugar and vanilla. Please do not eat if alergic to these items.";
-         var x = document.createElement("IMG"); 
-      x.setAttribute("src", "cheesecake.JPG"); 
-           x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228");                
-            x.setAttribute("alt", "cheese cake"); 
-		 break;
-        case "2": 
-       text = "Try eating this cheesy mac and cheese goodness that will satisfy you in a instance. Keep in mind that this dish commonly includes milk, egg, butter, flour, cheese and pepper. Please do not eat if alergic to these items.";       
-		 var x = document.createElement("IMG"); 
-           x.setAttribute("src", "macncheese.JPG");           
-		 x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228"); 
-  x.setAttribute("alt", "Mac n Cheese"); 
-            break; 
-        case "3": 
-		 text = "Try eating this classic moist red velvet cake with creamcheese frosting. This will definantly solve any craving porblems. Keep in mind that this dish commonly includes flour, baking powder, baking soda, cocoa powder, sugar, buttermilk, vanilla, cream cheese and milk. Please do not eat if alergic to these items.";        
-		 var x = document.createElement("IMG");
-		 var x = document.createElement("IMG"); 
-           x.setAttribute("src", "redvelvet.JPG"); 
-           x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Red Velvet Cake"); 
-		    x.setAttribute("align", "center"); 
-            break; 
-        case "4": 
-            text = "Enjoy this salty snack pretzels. They will solve your salty craving for sure. Please do not eat if alergic to this.";        
-	var x = document.createElement("IMG"); 
-        x.setAttribute("src", "pretzel.JPG"); 
-       x.setAttribute("width", "304");
-         x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Pretzel"); 
-            break; 
-        case "5": 
-        text = "Have a hearty flavorful quinoa burger. Keep in mind that this dish commonly includes quinoa, garlic, bread crumbs, butter and cheese. Please do not eat if alergic to these items."; 
-      var x = document.createElement("IMG"); 
-           x.setAttribute("src", "quinoaburger.JPG") 
-           x.setAttribute("width", "304"); 
-		 x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Quinoa Burger"); 
-            break; 
-        case "6" : 
-        text = "Try delicious easy to make avocado and cucumber sushi. Keep in mind that this dish commonly includes rice, seaweed, cucumbers, avocado and sesame seeds. Please do not eat if alergic to these items."; 
-      var x = document.createElement("IMG");
-           x.setAttribute("src","sushi.JPG"); 
-           x.setAttribute("width", "304");
-           x.setAttribute("height", "228"); 
-           x.setAttribute("alt","Cucumber Avocado Sushi");  
-           break; 
-  case "7" :  
-            text = "Have a hearty vegtable lasagna. Keep in mind that this dish commonly includes bell peppers, mushrooms, onion, garlic, tomato sauce, basil and vegtable oil. Please do not eat if alergic to these items.";
-		 var x = document.createElement("IMG"); 
-          x.setAttribute("src", "lasagna.jpeg");  
-        x.setAttribute("width", "304") 
-  x.setAttribute("height", "228"); 
-          x.setAttribute("alt", "Vegetable Lasagna"); 
-            break; 
-		  case "8":
-            text = "Try eating a warm noodle dish. Keep in mind that this dish commonly includes tomatos and garlic. Please do not eat if alergic to these items.";
-            var x = document.createElement("IMG");
-               x.setAttribute("src", "spaghetti (1).JPG");
-               x.setAttribute("width", "304");
-               x.setAttribute("height", "228");
-               x.setAttribute("alt", "spaghetti");
-        break;
-        case "9":
-        text = "Try eating the freshest burger a fast food restaurant can give. Keep in mind that this dish includes tomatos, mustard, cheese, relish, lettuce, beef and mayonnaise. Please do not eat if alergic to these items.";
-        var x = document.createElement("IMG");
-           x.setAttribute("src", "innout.JPG");
-           x.setAttribute("width", "304");
-           x.setAttribute("height", "228");
-           x.setAttribute("alt", "burger");
-        break;
-        case "10":
-        text = "Try eating a chocolately sweet goodness. Keep in mind that this dish includes cocoa, flour, sugar, baking powder, baking soda, milk, vanilla and eggs. Please do not eat if alergic to these items."
-        var x = document.createElement("IMG");
-           x.setAttribute("src", "chocolate cake.JPG");
-           x.setAttribute("width", "304");
-           x.setAttribute("height", "228");
-           x.setAttribute("alt", "chocolate cake");
-        break;
-        case "11":
-            text = "This dish will keep you satisfied with different vegtables and noodles. Keep in mind that this dish usually includes peanut oil, chicken broth, soy sauce and sesame oil. Please do not eat if alergic to these items.";
-            var x = document.createElement("IMG");
-               x.setAttribute("src", "chowmein.JPG");
-               x.setAttribute("width", "304");
-               x.setAttribute("height", "228");
-               x.setAttribute("alt", "chow mein");
-        break;
-        case "14":
-        text = "This snack will solve your salty cravings. Please do not eat if alergic to peanuts.";
-      var x = document.createElement("IMG");
-         x.setAttribute("src", "pretzel.JPG");
-         x.setAttribute("width", "304");
-         x.setAttribute("height", "228");
-         x.setAttribute("alt", "pretzel");
-        break;
-        case "12":
-        text = "This cheesy goodness on warm tortilla chips will keep you satisfied.";
-        var x = document.createElement("IMG");
-           x.setAttribute("src", "nacho.JPG");
-           x.setAttribute("width", "304");
-           x.setAttribute("height", "228");
-           x.setAttribute("alt", "nachos");
-        break;
-        case "13":
-            text = "This crispy but juicy in the inside chicken strips with seasoned fresh cut fries. Keep in mind that this dish includes cracker crumbs, chilipowder, salt, garlic powder, black powder and eggs. Please do not eat if alergic to these items.";
-            var x = document.createElement("IMG");
-               x.setAttribute("src", "chickentenders.JPG");
-               x.setAttribute("width", "304");
-               x.setAttribute("height", "228");
-               x.setAttribute("alt", "chickentenders");
-		  case "15": 
-           text = "Try eating a healthy but filling veggie wrap. Keep in mind that this dish commonly includes tomatos, onions, bell peppers, lettuce, cheese and seasoned rice. Please do not eat if alergic to these items."; 
-       
-         var x = document.createElement("IMG"); 
-       x.setAttribute("src", "veggiewrap.JPG"); 
-           x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228");                
-            x.setAttribute("alt", "Veggie Wrap"); 
-		 break;
-        case "16": 
-       text = "Try eating this savory comfort food, black bean burger. Keep in mind that this dish commonly includes black beans, egg, cumin, garlic, chili powder, hot sauce and bell peppers. Please do not eat if alergic to these items."; 
-        var x = document.createElement("IMG"); 
-           x.setAttribute("src", "blackbean.JPG");           
-		 x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228"); 
-  x.setAttribute("alt", "Black Bean Burger"); 
-            break; 
-        case "17": 
-		 text = "Try eating this delicious combination of a tofu and a muffin. These tofu muffins are light yet very filling. Keep in mind that this dish commonly includes tofu, tahini, soy milk, curcuma and bell peppers. Please do not eat if alergic to these items." 
-var x = document.createElement("IMG"); 
-           x.setAttribute("src", "tofu.JPG"); 
-           x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Tofu Muffin"); 
-            break; 
-        case "18": 
-            text = "Enjoy these warm savory cinnamon rolls. Keep in mind that this dish commonly uses yeast, flaxmeal, wheat flour, baking powder, vegtable oil, cinnamon and almond milk. Please do not eat if alergic to these items.";         var x = document.createElement("IMG"); 
-        x.setAttribute("src", "cinnamonroll.JPG"); 
-       x.setAttribute("width", "304");
-         x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Cinnamon Rolls"); 
-            break; 
-        case "19": 
-        text = " Have a rich fresh acai berry bowl with no yogurt. Keep in mind that this dish commonly includes honey, granola, nuts, seeds and acai. Please do not eat if alergic to these items."; 
-      var x = document.createElement("IMG"); 
-           x.setAttribute("src", "acaibowl.JPG") 
-           x.setAttribute("width", "304"); 
-           x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Acai Bowl"); 
-            break; 
-        case "20" : 
-        text = "Try eating a dish that incorportates the flavor of brown rice with the freshness of the vegtables in vegtable fruit rice. Keep in mind that this dish commonly includes peanut oil, brown rice, onions, garlic, bell peppers, soy sauce and sugar. Please do not eat if alergic to these items."; 
-      var x = document.createElement("IMG");
-           x.setAttribute("src", "friedrice.JPG"); 
-           x.setAttribute("width", "304");
-           x.setAttribute("height", "228"); 
-           x.setAttribute("alt", "Fried Rice");  
-           break; 
-  case "21" :  
-            text = "Eat this simple yet satisfying snack. Warm crispy tortilla chips with cold fresh salsa. Keep in mind that this dish commonly includes jalapenos, lime, cilantro, red onions and tomatos. Please do not eat if alergic to these items."; 
-        var x = document.createElement("IMG"); 
-          x.setAttribute("src", "salsa.JPG");  
-        x.setAttribute("width", "304") 
-  x.setAttribute("height", "228"); 
-          x.setAttribute("alt", "chips and salsa"); 
-        break;
-        default:
-        text = "Please pick a number 1-21. ";
-    }
-    document.getElementById("demo").innerHTML = text;
-    document.body.appendChild(x);
-}
-</script> 
-	<a href="food.html"> <button style="position: fixed; height: 80px; bottom: 0; right: 0; width: 200px;background-color:#F08080;">Retry for another suggestion</button></a>
-  </body> 
-</body>
-</html>
- 
+function myFunction() {
+				var text;
+				var vegetarian = document.getElementById("myInput").value;
+				switch(vegetarian) {
+					case "1":
+					text = "Try snacking on some fresh raw vegetables with a dip of your choice.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "veg.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "raw veggies");
+					break;
+					case "2":
+					text = "Try eating this parfait that will satisy your taste buds. Keep in mind that this dish commonly includes cream, egg, sugar and syrup. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "parfait.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Parfait");
+					break;
+					case "3":
+					text = "Try out some deviled eggs that you can make yourself at home with just some boiled eggs, mayo, mustard, and some paprika spice.";
+					var x = document.createElement("IMG");
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "degg.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "devilved eggs");
+					break;
+					case "4":
+					text = "Enjoy this salty snack pretzels. They will solve your salty craving for sure. Please do not eat if alergic to this.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pretzel.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Pretzel");
+					break;
+					case "5":
+					text = "Have a hearty crunchy granola bar. Keep in mind that this dish commonly includes oats, nuts, honey or other sweeteners. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "granola.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Granola");
+					break;
+					case "6" :
+					text = "Remember those small pastries Kronk made from the Emperor's New Grove? Turns out they are a delicacy in many countries. Try out some tasty spinach puffs. Please know this dish contains cheese.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src","puff.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt","spinach puff");
+					break;
+					case "7" :
+					text = "Have a fruity fruit salad. Keep in mind that this dish commonly includes various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "Fruit.jpeg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Fruit Salad");
+					break;
+					case "8":
+					text = "Try eating a light but creamy and smooth cheesecake. Keep in mind that this dish commonly includes  butter, cheese, sugar, and eggs. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "cheesecake.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "cheese cake");
+					break;
+					case "9":
+					text = "Have some ice cream! Mmm Yummy!";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "ice.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "ice cream");
+					break;
+					case "10":
+					text = "Try eating this classic moist red velvet cake with creamcheese frosting. This will definantly solve any craving porblems. Keep in mind that this dish commonly includes flour, baking powder, baking soda, cocoa powder, sugar, buttermilk, vanilla, cream cheese and milk. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "redvelvet.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Red Velvet Cake");
+					break;
+					case "11":
+					text = "Enjoy this fried pastry of one of America's best!";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "dou.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "donuts");
+					break;
+					case "13":
+					text = "Go get yourself some muffins, they make a great satisfying snack. Keep in mind that muffins include various fruits, seeds, nuts. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "muf.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "muffin");
+					break;
+					case "14" :
+					text = "Try shaking things up with a delicious milkshake. Keep in mind that this dish commonly includes milk, ice cream, or iced milk, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, or fruit syrup. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src","milkshake.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt","Milkshake");
+					break;
+					case "15" :
+					text = "Enjoy some refreshing rice pudding, also known as arroz con leche as you take the day to relax. This dish contains, sugar, cinnamon, rice, and condensed milk. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "rice.jpg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "rice pudding");
+					break;
+					case "16":
+					text = "Try having some good 'ol vegetable pizza, an old italian favorite.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pizza.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "veggie pizza");
+					break;
+					case "17":
+					text = "Have yourelf some warm soothing oatmeal with some fruit on top.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "oat.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "oatmeal");
+					break;
+					case "18":
+					text = "Go get yourself some grilled corn on the cob.";
+					var x = document.createElement("IMG");
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "corn.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "corn");
+					break;
+					case "19":
+					text = "Enjoy a delicious eggwhite breakfast sandwhich, with tomatoes, mozarella cheese, and spinach on a english, muffin.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "egg.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Egg WHite Breakfast");
+					break;
+					case "20":
+					text = "Have a hearty flavorful quinoa burger. Keep in mind that this dish commonly includes quinoa, garlic, bread crumbs, butter and cheese. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "quinoaburger.JPG")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Quinoa Burger");
+					break;
+					case "22" :
+					text = "Try delicious easy to make avocado and cucumber sushi. Keep in mind that this dish commonly includes rice, seaweed, cucumbers, avocado and sesame seeds. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src","sushi.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt","Cucumber Avocado Sushi");
+					break;
+					case "23" :
+					text = "Have a heary vetagle lasagna. Keep in mind that this dish commonly includes bell peppers, mushrooms, onion, garlic, tomato sauce, basil and vegtable oil. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "lasagna.jpeg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Vegetable Lasagna");
+					break;
+					case "24":
+					text = "Enjoy a delicious grilled cheese sandwhich that you will fall in love with.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "bread.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "grilled cheese");
+					break;
+					case "25":
+					text = "Try eating this cheesy mac and cheese goodness that will satisfy you in a instance. Keep in mind that this dish commonly includes milk, egg, butter, flour, cheese and pepper. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "macncheese.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Mac n Cheese");
+					break;
+					case "26":
+					text = "Try eating some refreshing, moist, savory cucumber sandwhiches  . Keep in mind that this dish commonly includes dairy products.";
+					var x = document.createElement("IMG");
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "cuc.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "cucumber sandwhich");
+					break;
+					case "27":
+					text = "Grab a cup of milk, a bowl, and some cereal of your choice and let the magic happen.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "cer.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Cereal");
+					break;
+					case "28":
+					text = "Have a magestic and creamy satisfying cheese covered baked potato...mmm. Keep in mind that this dish commonly includes onions.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pot.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "baked potato");
+					break;
+					case "12" :
+					text = "Try some delicious waffles that you can just make with a simple toaster and add your choice of toppings, from different syrups, to sides, and fruits.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src","waffle.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt","waffles");
+					break;
+					case "21" :
+					text = "Make yourself a scrumptious fruit cake that with apease your sweet tooth. Keep in mind this dish contains various fruits, sugar, oil, flour, milk, and eggs.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "fruitcake.jpg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "fruit cake");
+					break;
+					case "29":
+					text = "Try eating a healthy but filling veggie wrap. Keep in mind that this dish commonly includes tomatos, onions, bell peppers, lettuce, cheese and seasoned rice. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "veggiewrap.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Veggie Wrap");
+					break;
+					case "30":
+					text = "Try eating this savory comfort food, black bean sandwich. Keep in mind that this dish commonly includes black beans, onion, garlic, cilantro, and parsley. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "blackbeansw.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Black Bean sandwich");
+					break;
+					case "31":
+					text = "Try eating this delicious crisphy tofu taco. Keep in mind that this dish commonly includes tofu, tomatos, lettuce, avacado, and tortilla. Please do not eat if alergic to these items."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "tofutaco.jpeg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Tofu Taco");
+					break;
+					case "32":
+					text = "Enjoy this gluten free vegan mac and cheese. Keep in mind that this dish commonly uses gluten-free pasta and flour, non dairy milk, vegan mozzarella cheese, and gluten-free breadcrumbs. Please do not eat if alergic to these items.";         var x = document.createElement("IMG");
+					x.setAttribute("src", "macncheese.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Mac and cheese");
+					break;
+					case "33":
+					text = " Have a warm creamy tomato bisque sided with a side of toasted bread. Keep in mind that this dish commonly includes red pepper, olive oil, tomato juice and garlic. Please do no eat if alergic to these items. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "tomato.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Tomato Bisque Soup");
+					break;
+					case "34" :
+					text = "Try eating a dish that incorportates the flavor of brown rice with the freshness of the vegtables in vegtable fruit rice. Keep in mind that this dish commonly includes peanut oil, brown rice, onions, garlic, bell peppers, soy sauce and sugar. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "friedrice.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Fried Rice");
+					break;
+					case "35" :
+					text = "You can never go wrong with a simple vegan noodle soup.  Keep in mind that this dish commonly includes carrots,celery, onion, cloves, red potatoes, dried thyme, yeast, and gluten-free noodles. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "vgnoodles.jpg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Noodles");
+					break;
+					case "36":
+					text = "Try eating a yummy veggie burger. Keep in mind that this dish commonly includes tomatos, onions, vegan patty, lettuce, and other types of vegtables. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "veggieburger.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Veggie burger");
+					break;
+					case "37":
+					text = "Try eating this savory comfort food, black bean burger. Keep in mind that this dish commonly includes black beans, egg, cumin, garlic, chili powder, hot sauce and bell peppers. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "blackbean.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Black Bean Burger");
+					break;
+					case "38":
+					text = "Try eating this Vegan Lemon Fettuccine Alfredo. This yummy pasta is creamy and high in fiber. Keep in mind that this dish commonly includes Fettuccine, soy or almond milk, lemon zest, yeast, garlic, and parsley. Please do not eat if alergic to these items."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "alfredo.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Lemon Alfredo");
+					break;
+					case "39":
+					text = "Enjoy these warm savory cinnamon rolls. Keep in mind that this dish commonly uses yeast, flaxmeal, wheat flour, baking powder, vegtable oil, cinnamon and almond milk. Please do not eat if alergic to these items.";         var x = document.createElement("IMG");
+					x.setAttribute("src", "cinnamonroll.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Cinnamon Rolls");
+					break;
+					case "40":
+					text = " Have a warm crunchy veggie pizza. Keep in mind that this dish commonly includes bell pepers, red onions, mushrooms, basil, and oregano. Please do no eat if alergic to these items. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "vgpizza.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "veggie pizza");
+					break;
+					case "41" :
+					text = "Try eating this delicious Vegan cheesecake. This cheesecake is packed with yummy flavors. Keep in mind that this dish commonly includes vanilla extract,maple syrup,. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "cheesecake.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "cheesecake");
+					break;
+					case "42" :
+					text = "You can never go wrong with waffles.  Keep in mind that this dish commonly includes gluten-free flour, baking powder, maple syrup and almond milk. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "waffle.jpg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Waffles");
+					break;
+					case "43":
+					text = "Try having yourself a good 'ol chewy granola bar that will spice up some energy in your life.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "granola.jpg");
+					x.setAttribute("align", "center");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "granola bar");
+					break;
+					case "44":
+					text = " Have a rich fresh acai berry bowl with no yogurt. Keep in mind that this dish commonly includes honey, granola, nuts, seeds and acai. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "acaibowl.JPG")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Acai Bowl");
+					break;
+					case "45":
+					text = "Be a bit healthy and grab yourself some sweet juicy fruit (I hear apples hold great fiber)!"
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "fruit.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "fruit");
+					break;
+					case "46":
+					text = "Try eating this cinnamon-spiced apple crisp. Best with vegan vanilla ice cream! Keep in mind that this dish commonly includes cinnamon, apples, flour, white sugar, oats and brown sugar. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "applecrisp.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Apple Crisp");
+					break;
+					case "47" :
+					text = "Eat this simple yet satisfying snack. Warm crispy tortilla chips with cold fresh salsa. Keep in mind that this dish commonly includes jalapenos, lime, cilantro, red onions and tomatos. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "salsa.JPG");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "chips and salsa");
+					break;
+					case "48":
+					text = "These will be the best crunchy green beans you've ever tasted, (even if you don't like green beans) go enjoy some today!";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "beans.jpg");
+					x.setAttribute("style","right:-60px");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "fried green beans");
+					break;
+					case "49":
+					text = "Try eating this parfait that will satisy your taste buds. Keep in mind that this dish commonly includes cream, egg, sugar and syrup. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "parfait.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Parfait");
+					break;
+					case "50":
+					text = "Try having yourself a pint cookie dough ice cream. Mini chocolate chips and edible cookie dough mixed in with rich vanilla ice cream. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "icecream.jpe");
+					x.setAttribute("align", "center");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "cookie dough ice cream");
+					break;
+					case "51":
+					text = "Try some old-fashioned crackers and cheese, a delicious snack you can never get tired of, even add some meat if you're daring enough.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "C&C.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("float","right");
+					x.setAttribute("alt", "Crackers and cheese");
+					break;
+					case "52":
+					text = "No one can go wrong with crispy french fries. They are so addicting that it will make you forget about how much you ate."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "fries.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "fries");
+					break;
+					case "53":
+					text = "This snack will have you wanting more, try having some tasty chocolate covered biscuit sticks from your local store, complimentary from Japan, it also comes in different flavors.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pocky.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "pocky");
+					break;
+					case "54":
+					text = "This snack will solve your salty cravings. Please do not eat if alergic to peanuts.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pretzel.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "pretzel");
+					break;
+					case "55":
+					text = "MNM'S!!!! This is one of the best chocolate candies ever. They are so little that you can eat a whole bunch!";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "mnm.jpg");
+					x.setAttribute("style","right:-60px");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "mnm's");
+					break;
+					case "56":
+					text = "Enjoy some warm popcorn as apart of your day and relax and pop in a movie while you're at it.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "popcorn.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "popcorn");
+					break;
+					case "57":
+					text = "Pot pie is the best comfort food and its healthy! A creamy and savory with chicken and vegtables.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "potpie.jpg");
+					x.setAttribute("align", "center");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Pot Pie");
+					break;
+					case "58":
+					text = "Have this healthy yet filling chicken spinach pesto pasta. Chicken, mushrooms, spinach, and kale mixed in a warm pesto sauce. Please do not eat if alergic to these items. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pesto.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("float","right");
+					x.setAttribute("alt", "pesto spinach pasta");
+					break;
+					case "59":
+					text = "Try eating a healthy but filling veggie wrap. Keep in mind that this dish commonly includes tomatos, onions, bell peppers, lettuce, cheese and seasoned rice. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "veggiewrap.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Veggie Wrap");
+					break;
+					case "60":
+					text = " Have a warm creamy tomato bisque sided with a side of toasted bread. Keep in mind that this dish commonly includes red pepper, olive oil, tomato juice and garlic. Please do no eat if alergic to these items. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "tomato.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Tomato Bisque Soup");
+					break;
+					case "61":
+					text = "Have this pumkin crunch dessert. Its like a pumkin square topped with a cool whip and cream cheese mixture and toasted almonds."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pumpkin.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Pumpkin Crunch");
+					break;
+					case "62":
+					text = "Have a filling vegtable chili. Its filled with mixed vegtables, beans and a savory soup."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "chili.png");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Vegtable Chili");
+					break;
+					case "63":
+					text = "Try this dish that takes mac n cheese to a whole new level. White truffle mac n cheese is the ultimate comfort food."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "wtmnc.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "White Truffle Mac n Cheese");
+					break;
+					case "64":
+					text = "Try eating a warm noodle dish. Keep in mind that this dish commonly includes tomatos and garlic. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "spaghetti (1).JPG");
+					x.setAttribute("align", "center");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "spaghetti");
+					break;
+					case "65":
+					text = "Try eating the freshest burger a fast food restaurant can give. Keep in mind that this dish includes tomatos, mustard, cheese, relish, lettuce, beef and mayonnaise. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "innout.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("float","right");
+					x.setAttribute("alt", "burger");
+					break;
+					case "66":
+					text = "Try eating a chocolately sweet goodness. Keep in mind that this dish includes cocoa, flour, sugar, baking powder, baking soda, milk, vanilla and eggs. Please do not eat if alergic to these items."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "chocolate cake.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "chocolate cake");
+					break;
+					case "67":
+					text = "This dish will keep you satisfied with different vegtables and noodles. Keep in mind that this dish usually includes peanut oil, chicken broth, soy sauce and sesame oil. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "chowmein.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "chow mein");
+					break;
+					case "68":
+					text = "Have yourself this delicious beef cheese steak burrito, mmm it looks so good! This contains onions and bell peppers";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "bur.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "burrito");
+					break;
+					case "69":
+					text = "Have some chicken wings! You can top them in any type of sauce so there will always be a flavor for you. ";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "wings.jpg");
+					x.setAttribute("style","right:-60px");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "wings");
+					break;
+					case "70":
+					text = "This crispy but juicy in the inside chicken strips with seasoned fresh cut fries. Keep in mind that this dish includes cracker crumbs, chilipowder, salt, garlic powder, black powder and eggs. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "chickentenders.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "chickentenders");
+					break;
+					case "71":
+					text = "Have a rich fresh acai berry bowl with no yogurt. Keep in mind that this dish commonly includes honey, granola, nuts, seeds and acai. Please do not eat if alergic to these items.";
+					
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "acaibowl.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "acai bowl");
+					break;
+					case "72":
+					text = "Try eating a creamy Hummus that will satisy your taste buds. Keep in mind that this dish commonly includes Levantine dip or spread made from cooked, mashed chickpeas or other beans, blended with tahini, olive oil, lemon juice, salt and garlic. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "hummus.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Hummus");
+					break;
+					case "73":
+					text = "Try snacking on some roasted nuts. This will definantly solve any craving porblems. Keep in mind that this dish commonly includes salt and Pecans, Peanuts, Almonds, Walnuts etc... Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "nuts.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Mixed Nuts");
+					break;
+					case "74":
+					text = "Enjoy this salty snack pretzels. They will solve your salty craving for sure. Please do not eat if alergic to this.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "pretzel.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Pretzel");
+					break;
+					case "75":
+					text = "Have a hearty crunchy granola bar. Keep in mind that this dish commonly includes oats, nuts, honey or other sweeteners. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "granola.jpg")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Granola");
+					break;
+					case "76" :
+					text = "Try a berry delicious blueberry chia pudding. Keep in mind that this dish commonly includes blueberries, soy milk, vanilla extract, lemon zest, chia seeds, and honey. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src","Blueberry-Chia.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt","Blueberry-Chia");
+					break;
+					case "77" :
+					text = "Have a fruity fruit salad. Keep in mind that this dish commonly includes various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "Fruit.jpeg");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Fruit Salad");
+					break;
+					case "78":
+					text = "Try eating this cinnamon-spiced apple crisp. Best with vegan vanilla ice cream! Keep in mind that this dish commonly includes cinnamon, apples, flour, white sugar, oats and brown sugar. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "applecrisp.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Apple Crisp");
+					break;
+					case "79":
+					text = "Have Lays chips! Theres so many different flavors to choose from. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "lays.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Lays Chips");
+					break;
+					case "80":
+					text = " Popcorn! salty popcorn always help with your cravings."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "popcorn.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Popcorn");
+					break;
+					case "81":
+					text = "Enjoy these warm savory cinnamon rolls. Keep in mind that this dish commonly uses yeast, flaxmeal, wheat flour, baking powder, vegtable oil, cinnamon and almond milk. Please do not eat if alergic to these items.";         var x = document.createElement("IMG");
+					x.setAttribute("src", "cinnamonroll.JPG");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Cinnamon Rolls");
+					break;
+					case "82":
+					text = " Try eating this delicious combination of a tofu and a muffin. These tofu muffins are light yet very filling. Keep in mind that this dish commonly includes tofu, tahini, soy milk, curcuma and bell peppers. Please do not eat if alergic to these items."
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "tofu.JPG")
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Acai Bowl");
+					break;
+					case "83" :
+					text = " Everyone loves candy! Have these sour gummy worms. Keep in mind that this dish commonly includes corn syrup, sugar, citric acid and lactic acid. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "worm.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "Sour Gummy Worms");
+					break;
+					case "84" :
+					text = "Eat this simple yet satisfying snack. Warm crispy tortilla chips with cold fresh salsa. Keep in mind that this dish commonly includes jalapenos, lime, cilantro, red onions and tomatos. Please do not eat if alergic to these items.";
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "salsa.JPG");
+					x.setAttribute("width", "304")
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "chips and salsa");
+					break;
+					default:
+					text = "Please pick a number 1-84. "; 
+				}
+				document.getElementById("demo").innerHTML = text;
+				document.body.appendChild(x);
+			}
+			</script>
+			<a href="food.html"> <button style="position: fixed; height: 80px; bottom: 0; right: 0; width: 200px;background-color:#F08080;">Retry for another suggestion</button></a>
+		</body>
+	</body>
+	</html>
+
+    
