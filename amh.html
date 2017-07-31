@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+  body {
+    height: 700px;
+    background: white;  
+    background: -webkit-linear-gradient(left, white , pink); 
+    background: -o-linear-gradient(right, white, pink);
+    background: -moz-linear-gradient(right, white, pink); 
+    background: linear-gradient(to right, white, pink); 
+}
+  * {
+    font-family: Arial, Helvetica, sans-serif; }
+  h1 {
+  float: right;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+	letter-spacing: 3px;
+    }
+  table, h2 {
+    padding-bottom: 50px;
+    padding-left: 100px;
+}
+  .welcome {   padding-top: 30px;
+  }
+ ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F08080;
+}
+
+li {
+    float: left;
+    border-right:1px solid 	#FFFACD;
+}
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#demo {
+	color: black;
+	font-size:30px;
+	width: 800px;
+	
+}
+li a:hover:not(.active) {
+
+	background-color: #FAFAD2;
+}
+.active {
+    background-color:#FFB6C1;
+}
+  dir {
+    padding-left: 30%; 
+}
+#demo { 
+color: black; 
+font-size:30px;
+font-family:Times; 
+	width: 800px;
+	}
+h6 {
+	font-size:30px;
+	font-family:Times;
+	color:black;
+} 
+#myInput{
+	font-size:25px;
+	font-family:Times;
+}
+	    img {
+	    align:center;
+	    }
+  </style> 
+ <head>
+  <title>Results</title>
+</head>
+    <img src= "logo.jpg" alt="logo" width="128" height="128" > 
+    <h1> Food Friends</h1> 
+  <ul>
+  <li><a class="active" href="food.html">Home</a></li>
+  <li><a href="random.html">Random</a></li>
+  <li><a href="question.html">Quiz</a></li>
+</ul>
+<body>
+	<center><h6> Pick a number 1-7. </h6></center>
+	<center><input id="myInput" type="text"></center>
+	<center><button onclick="myFunction()">Try it</button></center>
+	<center><strong><p id="demo"></p></strong></center>
+<script>
+function myFunction() {
+    var text;
+    var allaround = document.getElementById("myInput").value;
+
+	switch(allaround) {
+        case "1":
+            text = "Try eating a warm noodle dish. Keep in mind that this dish commonly includes tomatos and garlic. Please do not eat if alergic to these items.";
+            var x = document.createElement("IMG");
+               x.setAttribute("src", "spaghetti (1).JPG");
+		    x.setAttribute("align", "center");
+               x.setAttribute("width", "304");
+               x.setAttribute("height", "228");
+               x.setAttribute("alt", "spaghetti");
+        break;
+        case "2":
+        text = "Try eating the freshest burger a fast food restaurant can give. Keep in mind that this dish includes tomatos, mustard, cheese, relish, lettuce, beef and mayonnaise. Please do not eat if alergic to these items.";
+        var x = document.createElement("IMG");
+           x.setAttribute("src", "innout.JPG");
+           x.setAttribute("width", "304");
+           x.setAttribute("height", "228");
+			x.setAttribute("float","right"); 
+           x.setAttribute("alt", "burger");
+        break;
+        case "3":
+        text = "Try eating a chocolately sweet goodness. Keep in mind that this dish includes cocoa, flour, sugar, baking powder, baking soda, milk, vanilla and eggs. Please do not eat if alergic to these items."
+        var x = document.createElement("IMG");
+           x.setAttribute("src", "chocolate cake.JPG");
+           x.setAttribute("width", "304");
+           x.setAttribute("height", "228");
+           x.setAttribute("alt", "chocolate cake");
+        break;
+        case "4":
+            text = "This dish will keep you satisfied with different vegtables and noodles. Keep in mind that this dish usually includes peanut oil, chicken broth, soy sauce and sesame oil. Please do not eat if alergic to these items.";
+            var x = document.createElement("IMG");
+               x.setAttribute("src", "chowmein.JPG");
+               x.setAttribute("width", "304");
+               x.setAttribute("height", "228");
+               x.setAttribute("alt", "chow mein");
+        break;
+        case "5":
+        text = "Have yourself this delicious beef cheese steak burrito, mmm it looks so good! This contains onions and bell peppers";
+      var x = document.createElement("IMG");
+         x.setAttribute("src", "bur.jpg");
+         x.setAttribute("width", "304");
+         x.setAttribute("height", "228");
+         x.setAttribute("alt", "burrito");
+        break;
+        case "6":
+        text = "This cheesy goodness on warm tortilla chips will keep you satisfied.";
+        var x = document.createElement("IMG");
+           x.setAttribute("src", "nacho.JPG");
+			x.setAttribute("style","right:-60px"); 
+           x.setAttribute("width", "304");
+           x.setAttribute("height", "228");
+           x.setAttribute("alt", "nachos");
+        break;
+        case "7":
+            text = "This crispy but juicy in the inside chicken strips with seasoned fresh cut fries. Keep in mind that this dish includes cracker crumbs, chilipowder, salt, garlic powder, black powder and eggs. Please do not eat if alergic to these items.";
+            var x = document.createElement("IMG");
+               x.setAttribute("src", "chickentenders.JPG");
+               x.setAttribute("width", "304");
+               x.setAttribute("height", "228");
+               x.setAttribute("alt", "chickentenders");
+        break;
+        default:
+        text = "Please pick a number 1-7";
+    }
+    document.getElementById("demo").innerHTML = text;
+    document.body.appendChild(x);
+}
+</script>
+	<a href="food.html"> <button style="position: fixed; height: 80px; bottom: 0; right: 0; width: 200px;background-color:#F08080;">Retry for another suggestion</button></a>
+</body>
+</html>
 
