@@ -73,8 +73,7 @@ font-family:Times;
 	width: 800px;
 	}
 h6 {
-	font-size:30px;
-	font-family:Times;
+	font-size:30px;	font-family:Times;
 	color:black;
 }
 #myInput{
@@ -84,8 +83,7 @@ h6 {
 	    img {
 	    align:center;
 	    }
-  </style>
- <head>
+  </style> <head>
   <title>Results</title>
 </head>
     <img src= "logo.jpg" alt="logo" width="128" height="128" >
@@ -95,8 +93,7 @@ h6 {
   <li><a href="random.html">Random</a></li>
   <li><a href="question.html">Quiz</a></li>
 </ul>
-<body>
-	<center><h6> Pick a number 1-7. </h6></center>
+<body>	<center><h6> Pick a number 1-7. </h6></center>
 	<center><input id="myInput" type="text"></center>
 	<center><button onclick="myFunction()">Try it</button></center>
 	<center><strong><p id="demo"></p></strong></center>
@@ -107,7 +104,7 @@ function myFunction() {
 
 	switch(allaround) {
         case "1":
-            text = "Pot pie is the best comfort food and its healthy! A creamy and savory with chicken and vegtables.";
+            text = "Pot pie is the best comfort food and its healthy! A creamy and savory dish with chicken and vegetables.";
             var x = document.createElement("IMG");
                x.setAttribute("src", "potpie.jpg");
 		    x.setAttribute("align", "center");
@@ -116,7 +113,7 @@ function myFunction() {
                x.setAttribute("alt", "Pot Pie");
         break;
         case "2":
-        text = "Have this healthy yet filling chicken spinach pesto pasta. Chicken, mushrooms, spinach, and kale mixed in a warm pesto sauce. Please do not eat if alergic to these items. ";
+        text = "Have this healthy yet filling chicken spinach pesto pasta. Chicken, mushrooms, spinach, and kale mixed in a warm pesto sauce. Please do not eat if allergic to these items. ";
         var x = document.createElement("IMG");
            x.setAttribute("src", "pesto.jpg");
            x.setAttribute("width", "304");
@@ -125,7 +122,7 @@ function myFunction() {
            x.setAttribute("alt", "pesto spinach pasta");
         break;
         case "3":
-          text = "Try eating a healthy but filling veggie wrap. Keep in mind that this dish commonly includes tomatos, onions, bell peppers, lettuce, cheese and seasoned rice. Please do not eat if alergic to these items.";
+          text = "Try eating a healthy but filling veggie wrap. Keep in mind that this dish commonly includes tomatos, onions, bell peppers, lettuce, cheese and seasoned rice. Please do not eat if allergic to these items.";
           var x = document.createElement("IMG");
        x.setAttribute("src", "veggiewrap.JPG");
             x.setAttribute("width", "304");
@@ -133,7 +130,7 @@ function myFunction() {
              x.setAttribute("alt", "Veggie Wrap");
  		 break;
      case "4":
-              text = " Have a warm creamy tomato bisque sided with a side of toasted bread. Keep in mind that this dish commonly includes red pepper, olive oil, tomato juice and garlic. Please do no eat if alergic to these items. ";
+              text = " Have a warm creamy tomato bisque sided with a side of toasted bread. Keep in mind that this dish commonly includes red pepper, olive oil, tomato juice and garlic. Please do no eat if allergic to these items. ";
             var x = document.createElement("IMG");
                  x.setAttribute("src", "tomato.jpg")
                  x.setAttribute("width", "304");
@@ -149,7 +146,7 @@ function myFunction() {
            x.setAttribute("alt", "Pumpkin Crunch");
         break;
         case "6":
-        text = "Have a filling vegtable chili. Its filled with mixed vegtables, beans and a savory soup."
+        text = "Have a filling vegetable chili. Its filled with mixed vegetables and beans in a savory soup."
         var x = document.createElement("IMG");
            x.setAttribute("src", "chili.png");
            x.setAttribute("width", "304");
